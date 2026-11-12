@@ -1,0 +1,10 @@
+{
+  "id": "blueberry-banana",
+  "name": "Blueberry Banana",
+  "author": {
+    "name": "Beekeeper Studio",
+    "url": "https://www.beekeeperstudio.io"
+  },
+  "description": "A fork of the Blueberry Banana VS Code theme by Peter Shershov.",
+  "version": "1.0.0"
+}

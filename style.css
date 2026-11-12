@@ -1,0 +1,251 @@
+/*
+ * Blueberry Banana
+ *
+ * A fork of the Blueberry Banana VS Code theme by Peter Shershov:
+ * https://github.com/PeterShershov/blueberry-banana-vscode-theme
+ *
+ * The dark colors follow the original theme. The original has no light
+ * variant, so the light colors are new to this fork.
+ *
+ * Original theme license:
+ *
+ * MIT License
+ *
+ * Copyright (c) 2019 Peter Shershov
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+.dark-theme {
+  /* UI colors */
+  --background: #17141f;
+  --base-gray: #7f6e99;
+  --base-red: #c24038;
+  --base-orange: #e07d13;
+  --base-yellow: #e6c62f;
+  --base-green: #29e7ae;
+  --base-blue: #2face6;
+  --base-purple: #ae66b6;
+  --base-pink: #dc396a;
+  --base-accent: #ae66b6;
+
+  /* Surfaces */
+  --bb-sidebar: #1a1824;
+  --bb-widget: #151920;
+  --bb-plum: #220525;
+
+  /* Editor colors */
+  --bb-bg: #17141f;
+  --bb-fg: #cdcdcd;
+  --bb-line: #ae66b618;
+  --bb-selection: #308db86c;
+  --bb-find: #314365;
+  --bb-gutter: #495162;
+  --bb-indent: #3b4048;
+  --bb-comment: #7f6e99;
+  --bb-blueberry: #ae66b6;
+  --bb-banana: #e6c62f;
+  --bb-orange: #e07d13;
+  --bb-amber: #dc8d39;
+  --bb-cyan: #39dcdc;
+  --bb-teal: #56b6c2;
+  --bb-blue: #2face6;
+  --bb-sky: #61afef;
+  --bb-raspberry: #dc396a;
+  --bb-crimson: #b9355d;
+  --bb-orchid: #b759c2;
+  --bb-error: #c24038;
+}
+
+/* Banana split: a light companion to the original */
+.light-theme {
+  /* UI colors */
+  --background: #fdfaf1;
+  --base-gray: #7f6e99;
+  --base-red: #c24038;
+  --base-orange: #e07d13;
+  --base-yellow: #e6c62f;
+  --base-green: #29e7ae;
+  --base-blue: #2face6;
+  --base-purple: #ae66b6;
+  --base-pink: #dc396a;
+  --base-accent: #ae66b6;
+
+  /* Surfaces */
+  --bb-sidebar: #f7f2e4;
+  --bb-widget: #fffdf7;
+  --bb-plum: #f3e6f4;
+
+  /* Editor colors */
+  --bb-bg: #fdfaf1;
+  --bb-fg: #2b2536;
+  --bb-line: #ae66b614;
+  --bb-selection: #308db833;
+  --bb-find: #e6c62f59;
+  --bb-gutter: #9a92a8;
+  --bb-indent: #e8e1d0;
+  --bb-comment: #7a6a94;
+  --bb-blueberry: #8b3f94;
+  --bb-banana: #8a6d00;
+  --bb-orange: #b05a00;
+  --bb-amber: #a35f12;
+  --bb-cyan: #007c86;
+  --bb-teal: #1f7a85;
+  --bb-blue: #0b74a6;
+  --bb-sky: #2a6fb5;
+  --bb-raspberry: #c2185b;
+  --bb-crimson: #a3264d;
+  --bb-orchid: #94379f;
+  --bb-error: #c24038;
+}
+
+.light-theme,
+.dark-theme {
+  /* ===== Input ===== */
+
+  --input-border: 1px solid rgb(from var(--bb-blueberry) r g b / 0.4);
+  --input-border-focus: 1px solid var(--bb-blueberry);
+
+  /* ===== Link ===== */
+
+  --link-fg: var(--bb-banana);
+
+  /* ===== Selection ===== */
+
+  --selection-bg: var(--bb-selection);
+
+  /* ===== Scrollbar ===== */
+
+  --scrollbar-thumb: rgb(from var(--bb-gutter) r g b / 0.5);
+
+  /* ===== Titlebar ===== */
+
+  --titlebar-bg: var(--bb-bg);
+  --titlebar-inactive-bg: var(--bb-bg);
+
+  /* ===== Sidebar ===== */
+
+  --sidebar-bg: var(--bb-sidebar);
+  --sidebar-rail-bg: var(--bb-bg);
+  --sidebar-rail-active-fg: var(--bb-blueberry);
+
+  /* ===== Panel ===== */
+
+  --panel-bg: var(--bb-widget);
+  --menu-bg: var(--bb-widget);
+  --connection-form-card-bg: var(--bb-sidebar);
+
+  /* ===== Nav Pills ===== */
+
+  --nav-pill-active-fg: var(--bb-banana);
+  --nav-pill-active-shadow: inset 0 -2px var(--bb-banana);
+
+  /* ===== Tree ===== */
+
+  --tree-guide-border-hover: rgb(from var(--bb-banana) r g b / 0.4);
+
+  /* ===== Statusbar ===== */
+
+  --statusbar-bg: #e6c62f;
+  --statusbar-fg: #1c212b;
+  --statusbar-fg-inverse: #e6c62f;
+
+  /* ===== Tabs ===== */
+
+  --tabs-header-bg: var(--bb-bg);
+  --tab-bg: var(--bb-bg);
+  --tab-active-bg: var(--bb-plum);
+
+  /* ===== Badge ===== */
+
+  --badge-primary-bg: var(--bb-fg);
+  --badge-primary-fg: var(--bb-widget);
+
+  /* ===== Editor ===== */
+
+  /* Editor chrome */
+  --editor-bg: var(--bb-bg);
+  --editor-fg: var(--bb-fg);
+  --editor-cursor-bg: var(--bb-fg);
+  --editor-selected-bg: var(--bb-selection);
+  --editor-activeline-bg: var(--bb-line);
+  --editor-activeline-gutter-bg: var(--bb-line);
+  --editor-error-fg: var(--bb-error);
+  --editor-gutter-bg: var(--bb-bg);
+  --editor-linenumber-fg: var(--bb-gutter);
+  --editor-linenumber-active-fg: var(--bb-fg);
+  --editor-foldgutter-fg: var(--bb-gutter);
+  --editor-foldgutter-fg-hover: var(--bb-fg);
+  --editor-indent-marker-bg: var(--bb-indent);
+  --editor-indent-marker-active-bg: var(--bb-gutter);
+
+  /* Matches and markers */
+  --editor-guttermarker-subtle-fg: var(--bb-gutter);
+  --editor-matchingselection-bg: var(--bb-line);
+  --editor-searchmatch-bg: var(--bb-find);
+  --editor-searchmatch-selected-bg: rgb(from var(--bb-banana) r g b / 0.35);
+  --editor-matchingbracket-fg: var(--bb-banana);
+  --editor-matchingbracket-bg: var(--bb-line);
+  --editor-fatcursor-bg: var(--bb-banana);
+
+  /* Vim panel */
+  --editor-vim-panel-insert-bg: rgb(from var(--bb-cyan) r g b / 0.15);
+  --editor-vim-panel-insert-fg: var(--bb-cyan);
+  --editor-vim-panel-visual-bg: rgb(from var(--bb-blueberry) r g b / 0.15);
+  --editor-vim-panel-visual-fg: var(--bb-blueberry);
+  --editor-vim-panel-replace-bg: rgb(from var(--bb-raspberry) r g b / 0.15);
+  --editor-vim-panel-replace-fg: var(--bb-raspberry);
+
+  /* ===== Color Syntax ===== */
+
+  --syntax-keyword: var(--bb-banana);
+  --syntax-string: var(--bb-orange);
+  --syntax-constant: var(--bb-orange);
+  --syntax-variable: var(--bb-fg);
+  --syntax-function: var(--bb-cyan);
+  --syntax-type: var(--bb-raspberry);
+  --syntax-decorator: var(--bb-orchid);
+  --syntax-link: var(--bb-sky);
+  --syntax-diff: var(--bb-blueberry);
+  --syntax-comment: var(--bb-comment);
+  --syntax-punctuation: var(--bb-fg);
+
+  --editor-operator-fg: var(--bb-crimson);
+  --editor-operatorKeyword-fg: var(--bb-crimson);
+  --editor-standard-fg: var(--bb-cyan);
+  --editor-self-fg: var(--bb-raspberry);
+  --editor-bool-fg: var(--bb-teal);
+  --editor-null-fg: var(--bb-teal);
+  --editor-atom-fg: var(--bb-teal);
+  --editor-typeName-fg: var(--bb-banana);
+  --editor-property-fg: var(--bb-orchid);
+  --editor-propertyName-fg: var(--bb-orchid);
+  --editor-parameter-fg: var(--bb-amber);
+  --editor-attributeName-fg: var(--bb-orchid);
+  --editor-heading-fg: var(--bb-raspberry);
+  --editor-changed-fg: var(--bb-banana);
+  --editor-strong-fg: var(--bb-banana);
+  --editor-emphasis-fg: var(--bb-banana);
+  --editor-strikethrough-fg: var(--bb-comment);
+
+  /* ===== Mongo Shell ===== */
+
+  --mongo-shell-mongo-prompt-fg: var(--bb-banana);
+  --mongo-shell-ansi-output-fg: var(--bb-fg);
+}
